@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -47,6 +48,9 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <segue destination="00p-ef-VS8" kind="show" id="9aZ-RZ-JHg"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
@@ -62,6 +66,38 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="abS-Jk-UC0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="500" y="124.58770614692655"/>
+        </scene>
+        <!--Weather Detail View Controller-->
+        <scene sceneID="Ok4-7I-JNK">
+            <objects>
+                <viewController id="00p-ef-VS8" customClass="WeatherDetailViewController" customModule="WeatherApplication" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="rXi-FH-huI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="9o0-mm-Wol">
+                                <rect key="frame" x="67" y="146" width="240" height="338"/>
+                                <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45138680930000002" green="0.99309605359999997" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="nVQ-Iq-cBz" firstAttribute="trailing" secondItem="9o0-mm-Wol" secondAttribute="trailing" constant="68" id="AwG-4v-WA0"/>
+                            <constraint firstItem="9o0-mm-Wol" firstAttribute="top" secondItem="nVQ-Iq-cBz" secondAttribute="top" constant="82" id="HEo-ZV-td8"/>
+                            <constraint firstItem="nVQ-Iq-cBz" firstAttribute="bottom" secondItem="9o0-mm-Wol" secondAttribute="bottom" constant="183" id="Rgo-b5-njv"/>
+                            <constraint firstItem="9o0-mm-Wol" firstAttribute="leading" secondItem="nVQ-Iq-cBz" secondAttribute="leading" constant="67" id="wD5-Zx-qfs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nVQ-Iq-cBz"/>
+                    </view>
+                    <connections>
+                        <outlet property="textField" destination="9o0-mm-Wol" id="4f5-47-z9M"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cOI-G1-mBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1296.8" y="124.58770614692655"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="efj-MS-wLG">
