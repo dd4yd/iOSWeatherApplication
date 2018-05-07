@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		696D3D7C20A0F5AF00EEF80A /* WeatherDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D3D7B20A0F5AF00EEF80A /* WeatherDetailViewController.swift */; };
+		696D3D7E20A0FEA500EEF80A /* Forecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D3D7D20A0FEA500EEF80A /* Forecast.swift */; };
+		696D3D8020A0FEBF00EEF80A /* DailyForecast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 696D3D7F20A0FEBF00EEF80A /* DailyForecast.swift */; };
 		6992F06020990B1800A116E1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6992F05F20990B1800A116E1 /* AppDelegate.swift */; };
 		6992F06520990B1800A116E1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6992F06320990B1800A116E1 /* Main.storyboard */; };
 		6992F06720990B1800A116E1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6992F06620990B1800A116E1 /* Assets.xcassets */; };
@@ -18,6 +20,8 @@
 
 /* Begin PBXFileReference section */
 		696D3D7B20A0F5AF00EEF80A /* WeatherDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherDetailViewController.swift; sourceTree = "<group>"; };
+		696D3D7D20A0FEA500EEF80A /* Forecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Forecast.swift; sourceTree = "<group>"; };
+		696D3D7F20A0FEBF00EEF80A /* DailyForecast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyForecast.swift; sourceTree = "<group>"; };
 		6992F05C20990B1800A116E1 /* WeatherApplication.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WeatherApplication.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6992F05F20990B1800A116E1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6992F06420990B1800A116E1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -66,6 +70,8 @@
 				6992F07120990B2900A116E1 /* WeatherParser.swift */,
 				6992F07320990F8000A116E1 /* WeatherTableViewController.swift */,
 				696D3D7B20A0F5AF00EEF80A /* WeatherDetailViewController.swift */,
+				696D3D7D20A0FEA500EEF80A /* Forecast.swift */,
+				696D3D7F20A0FEBF00EEF80A /* DailyForecast.swift */,
 			);
 			path = WeatherApplication;
 			sourceTree = "<group>";
@@ -144,8 +150,10 @@
 			files = (
 				6992F07220990B2900A116E1 /* WeatherParser.swift in Sources */,
 				6992F07420990F8000A116E1 /* WeatherTableViewController.swift in Sources */,
+				696D3D8020A0FEBF00EEF80A /* DailyForecast.swift in Sources */,
 				696D3D7C20A0F5AF00EEF80A /* WeatherDetailViewController.swift in Sources */,
 				6992F06020990B1800A116E1 /* AppDelegate.swift in Sources */,
+				696D3D7E20A0FEA500EEF80A /* Forecast.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
